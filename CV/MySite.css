@@ -1,0 +1,65 @@
+html{
+	
+}
+.ccc {
+      text-align: center;
+	 }
+
+#aaa {
+      background-color: #AAAAAA;
+      text-align: left;
+     }
+
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-align: left;
+  }
+
+ h1,h4 {
+		font-family: cursive;
+		color: black;
+		text-align: center;
+		} 
+ h2 {
+	 color: #f8f5f1; 
+	 text-align: left;
+    } 
+ h3 {
+	 color: black;
+	 text-align: left;
+    } 
+.center {
+		 display: block;
+		 margin-left: auto;
+		 margin-right: auto;
+		 width: 50%;
+		 border-radius: 50%;
+		}
+.bbb {
+       display: inline-block; 
+       margin: 0; 
+	 }
+a {
+	text-decoration: underline ;
+	text-decoration-color: none;
+}
+
+ .d1, .d3, .d5{   font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+	 background-color: #AAAAAA;
+}
+.d2, .d4, .d6 {
+	 background-color: #424642;
+}
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+#A1:hover  {
+	color: #f8f5f1; 
+	text-decoration: underline  ;
+}
