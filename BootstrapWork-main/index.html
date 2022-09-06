@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel = "icon" href = 
+"data:image/jpeg;base64,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" 
+        type = "image/x-icon">
+<title>News Blog</title>
+</head>
+
+<body class=" bg-secondary ">  
+  <!-- As a heading -->
+
+        <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+            <a class="navbar-brand" href="#">NEWS!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </nav>
+      <div id="carouselExampleIndicators" class="carousel slide my-1" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1560177112-fbfd5fde9566?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" width="500" height="600" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1565453006698-a17d83b9e2af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" width="500" height="600" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/R112ac68583ac579b387e3b31810044fd?rik=Pz2e2eSXtWgN6Q&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1566378246598-5b11a0d486cc%3fixlib%3drb-1.2.1%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9&ehk=o7f3RoVwT4fw6JveR%2fsa1PU1QshROiksVNYcZ95rIX8%3d&risl=&pid=ImgRaw" width="500" height="600" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <!--   <div class="card mb-3 m-4 " style="max-width: 540px;">
+            <div class="row no-gutters ">
+              <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1543693004-223142a86d6f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG5ld3NwYXBlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=500px height=200px class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+                </div>
+              </div>
+              <div class="card mb-3 m-4 " style="max-width: 540px;">
+                <div class="row no-gutters ">
+                  <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1543693004-223142a86d6f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG5ld3NwYXBlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=500px height=200px class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+        -->
+        
+        <div class="row my-4">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="https://www.getmeupadvertising.in/images/big-logo/The-Tribune-min.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                          <p class="card-text">The Tribune is an Indian English-language daily newspaper published from Amritsar, Jalandhar, Ludhiana, Bathinda, Chandigarh and New Delhi. It was founded on 2 February 1881, in Lahore, Punjab (now in Pakistan), by Sardar Dyal Singh Majithia.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                             <a href="https://www.tribuneindia.com/"  <button type="button" class="btn btn-sm btn-primary">View</button></a>
+                                      </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://www.marketing91.com/wp-content/uploads/2016/12/NDTV.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">NDTV New Delhi Television Ltd is an Indian news media company focusing on broadcast and digital news publication. The company is considered to be a legacy brand that pioneered independent news broadcasting in India.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group"> <a href="https://www.ndtv.com/"  <button type="button" class="btn btn-sm btn-primary">View</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://th.bing.com/th/id/OIP.bP7OC5ht9mqDZuLMN0U9RwHaD5?pid=ImgDet&rs=1" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">
+                            The Times of India is an Indian English-language daily newspaper owned by The Times Group. It is the third-largest newspaper in India by circulation and the second-largest selling English-language.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group"> <a href="https://timesofindia.indiatimes.com/"  <button type="button" class="btn btn-sm btn-primary">View</button></a>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://www.bing.com/th?id=OIP.PoVU810dfu_QSxycL6h6VAHaDR&w=198&h=95&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">
+                            The Hindu is an English-language daily newspaper owned by The Hindu Group, headquartered in Chennai, Tamil Nadu, India. It began as a weekly in 1878 and became a daily in 1889.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group"> <a href="https://www.thehindu.com/"  <button type="button" class="btn btn-sm btn-primary">View</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://th.bing.com/th/id/R19803b59f70b5f680741a8b939582317?rik=olB3vt%2fM7GgXFA&riu=http%3a%2f%2fwww.ranklogos.com%2fwp-content%2fuploads%2f2012%2f08%2fecnomuc.jpg&ehk=T2rWC98Sla9OqS7M9LuIHnkDmseeVyp4S1yyIHttVDA%3d&risl=&pid=ImgRaw" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">The Economic Times is an Indian English-language business-focused daily newspaper. It is owned by The Times Group. The Economic Times began publication in 1961. As of 2012, it is the world's second-most widely read English-language business newspaper.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group"> <a href="https://economictimes.indiatimes.com/"  <button type="button" class="btn btn-sm btn-primary">View</button></a>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://logos-download.com/wp-content/uploads/2020/06/Indian_Express_Logo.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">
+                            The Indian Express is an English-language Indian daily newspaper. It is published in Mumbai by Indian Express Group. In 1999, eight years after the group's founder Ramnath Goenka's death in 1991, the group was split between the family members.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group"> <a href="https://indianexpress.com/"  <button type="button" class="btn btn-sm btn-primary">View</button></a>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+         <!-- 
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_179d0495fef%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_179d0495fef%22%3E%3Crect%20width%3D%22208%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9453125%22%20y%3D%22117.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_179d0495ff1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_179d0495ff1%22%3E%3Crect%20width%3D%22208%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9453125%22%20y%3D%22117.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       <div class="col-md-4">
+                          <div class="card mb-4 box-shadow">
+                          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_179d0495ff2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_179d0495ff2%22%3E%3Crect%20width%3D%22208%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9453125%22%20y%3D%22117.3%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    -->
+                    </div>
+                  </div>           
+            </div>
+          </div>
+          <hr>
+          <footer class="blog-footer text-center">
+            <p>By Sukhveer Singh</p>
+            <small> First attempt with Bootstrap.</small>
+            <p>
+              <a href="#">Back to top</a>
+            </p>
+          </footer>
+        </body>
+
+</html>

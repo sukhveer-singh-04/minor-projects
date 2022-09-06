@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AREA AND PERIMETER</string>
+    <string name="Show_formula_Area_and_perimeter">Show</string>
+    <string name="Rectangle">Rectangle</string>
+    <string name="Circle">Circle</string>
+    <string name="Square">Square</string>
+    <string name="Cone">Cone</string>
+    <string name="Next">Next</string>
+    <string name="Area_R">Area of Rectangle = Length * Breadth</string>
+    <string name="Perimeter_R">Perimeter of Rectangle = 2( Length + Breadth )</string>
+    <string name="Area_C">Area of Circle = π*radius*radius</string>
+    <string name="Perimeter_C">Perimeter of Circle = 2*π*radius</string>
+    <string name="Area_S">Area of Square = Length * Length</string>
+    <string name="Perimeter_S">Perimeter of Square = 4*Length</string>
+    <string name="Area_Cone">Total Surface Area of Cone = π*radius*(radius + Length)</string>
+    <string name="Perimeter_Cone">Surface Area of Cone = π*radius*Length</string>
+</resources>

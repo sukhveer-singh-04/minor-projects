@@ -1,0 +1,165 @@
+body {
+	font-size:150%;
+	margin: 0 auto 0 auto;
+    -webkit-font-smoothing: antialiased;
+	background-image: url("https://th.bing.com/th/id/R68714b9e42768c779549fc59a2aacb4b?rik=vQ1L7qMf2wU1Eg&riu=http%3a%2f%2fwww.bypeople.com%2fwp-content%2fuploads%2f2014%2f05%2flight-live-background-css.jpg&ehk=f3DN275nadLF99LPBEykgtmBNK7iTJ0wfdyaT0228O0%3d&risl=&pid=ImgRaw");
+     }
+	 
+
+.d99 {
+	color:white;
+	background-color: black;
+	text-align:center;
+	position:fixed;
+}
+div.TOP {
+	display:block;
+	background-image: url("543211.jpg");
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-size: 100% 100%;
+	 font-size:150%;
+	 padding: 90px;
+     }
+div.divforall {
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 }
+.Speciality_table {
+      text-align: center;
+	   font-size:150%;
+	 }
+
+ h1,h4 {
+		font-family: cursive;
+		text-align: center;
+		margin: 0;
+		} 
+h2 {
+	text-align: center;
+	
+    }
+ h3 {
+		 text-align: center;
+	 font-family: Yellowtail;
+		 line-height: 15.4px;
+	 
+    } 
+.image_center {
+			 margin-left: auto;
+		 margin-right: auto;
+		 width: 70%;
+		 border-radius: 90%;
+		}
+	
+		
+/* d1= HELLO,d2= Brief info, d3= Qualifications,
+ d4= Hobbies, d5= Speciality, d6= Contact, d7= Dream. */
+ .d1 {position:static;
+ 
+    padding-top: 60px;
+    padding-bottom: 30px;
+	 line-height: 1.1;	
+text-align: center;	
+ font-size:150%;
+ }
+ 
+ .d3, .d5{ 
+    line-height: 1.1;	
+text-align: center;	
+font-size:100%;
+ }
+
+.d2, .d4 {
+	text-align: center;
+	font-size:150%;
+}
+
+.d6 {
+
+	font-size:150%;
+	
+	text-align: center;
+}
+
+.d7 {
+text-align: center;
+	font-size:150%;
+	height: 50px;
+    }
+
+
+.A1 {
+	
+    margin: 0px;
+    color: black; 
+	text-decoration: underline;
+	text-align: center;
+	}
+
+
+
+/* for Hello and This IS */
+.h { font-family: Yellowtail;
+	  font-size: 20px;
+	  font-style: normal; 
+	  font-variant: normal;  
+      font-weight: 700; 
+	  line-height: 20px; 
+	}
+	
+hr.divider
+{ 
+   margin-top: 0em;
+   margin-bottom: 0em;
+   border-width: 2px;
+} 
+/* For Programer and Web Developer */
+.p1 {
+	background-image: url("https://www.fortplainfreelibrary.org/wp-content/uploads/2016/05/free-professional-website-backgrounds_188492.jpg");
+	
+	background-color: #fad0c4;
+	text-align: center;
+	font-size: 150%;
+	font-family: Yellowtail;
+	font-style: normal; 
+	font-variant: normal;  
+	font-weight: 400;
+	line-height: 20px;
+	}
+	
+#dream { font-family: Yellowtail;
+		font-size: 20px;
+		font-style: normal;
+		font-variant: normal;  
+		font-weight: 400;
+		line-height: 20px; 
+		text-align: center;
+		} 
+.footer {
+	color:white;
+	text-align:center;
+	height:50px;
+	width: 100%;
+	background-color: black;
+	
+}
+
+.button {
+font-size: 18px;
+color: #FFFFFF;
+    background-color: #04AA6D!important;
+    border-radius: 5px;
+margin-bottom: 16px!important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
